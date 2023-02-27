@@ -1,0 +1,16 @@
+.attribution { 
+    height: 10%;
+    font-size: 11px; 
+    text-align: center;
+
+    &__link { 
+        color: black;
+        text-decoration: none;
+    }
+}
+
+@media all and (min-width: 768px){
+    .attribution{
+        font-size: 15px; 
+    }
+}
