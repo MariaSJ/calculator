@@ -2,18 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/main.css">
-  <title>Frontend Mentor | Calculator app</title>
-
-  <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
+  <title>Calculator app</title>
 </head>
+
 <body>
-  <main class="main"></main>
+  
+  <main class="main">
+    <include src="partials/header.html" title="header"></include>
+    <section class="calc">
+      <include src="partials/screen.html" title="screen"></include>
+      <include src="partials/keyboard.html" title="keyboard"></include>
+    </section>
+  </main>
   <include src="partials/footer.html" title="footer"></include>
 </body>
 </html>

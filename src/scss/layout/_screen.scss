@@ -1,0 +1,19 @@
+.screen{
+    width: 310px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: $one-screen-background;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &__operations{
+        padding: 20px;
+        font-size: $font-size-num;
+        font-weight: 700;
+        color: $text-white;
+    }
+}
