@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <title>Calculator app</title>
+</head>
+
+<body class="dark" id="body">
+  <main class="main">
+    <section class="header" id="header">
+        <h3 class="header__title">Calc</h3>
+        <div class="header__theme">
+            <p class="header__text">Theme</p>
+            <div class="header__toggle">
+                <div class="header__wraper">
+                    <span class="header__num">1</span>
+                    <span class="header__num">2</span>
+                    <span class="header__num">3</span>
+                </div>
+                <div class="header__switch">
+                    <input class="header__btn--1 js-btn-dark" type="button">
+                    <input class="header__btn--2 js-btn-light" type="button">
+                    <input class="header__btn--3 js-btn-colorful" type="button">
+                </div>
+            </div>    
+        </div>
+    </section>
+    <section class="calc">
+      <div class="screen">
+          <input class="screen__operations" type="text" name="result" id="result" value="">
+      </div>
+      <div class="keyboard">
+          <div class="keyboard__list">
+              <button class="keyboard__key" onclick="addNumber(7)">7</button>
+              <button class="keyboard__key" onclick="addNumber(8)">8</button>
+              <button class="keyboard__key" onclick="addNumber(9)">9</button>
+              <button class="keyboard__key--clean" onclick="clean()">Del</button>
+              <button class="keyboard__key" onclick="addNumber(4)">4</button>
+              <button class="keyboard__key" onclick="addNumber(5)">5</button>
+              <button class="keyboard__key" onclick="addNumber(6)">6</button>
+              <button class="keyboard__key" onclick="operate('+')">+</button>
+              <button class="keyboard__key" onclick="addNumber(1)">1</button>
+              <button class="keyboard__key" onclick="addNumber(2)">2</button>
+              <button class="keyboard__key" onclick="addNumber(3)">3</button>
+              <button class="keyboard__key" onclick="operate('-')">-</button>
+              <button class="keyboard__key" onclick="addNumber('.')">.</button>
+              <button class="keyboard__key" onclick="addNumber(0)">0</button>
+              <button class="keyboard__key" onclick="operate('/')">/</button>
+              <button class="keyboard__key" onclick="operate('*')">x</button>
+              <button class="keyboard__key--expand1" onclick="reset()">Reset</button>
+              <button class="keyboard__key--expand2" onclick="calculate()">=</button>
+          </div>
+      </div>
+
+    </section>
+  </main>
+  <div class="footer">
+      Challenge by <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded with ❤︎ <a class="footer__link" href="https://github.com/MariaSJ" target="_blank">María SJ</a>
+  </div>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
