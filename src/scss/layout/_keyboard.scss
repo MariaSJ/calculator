@@ -1,35 +1,48 @@
 .keyboard{
 
     &__list{
-        height: 330px;
+        height: 360px;
         padding: 15px;
         background-color: $one-toggle-background;
         border-radius: 10px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 50px;
-        gap: 10px;
+        gap: 15px;
         align-items: stretch;
         justify-items: stretch;
     }
 
     &__key{
+        border: none;
+        outline: none;
         background-color: $white-key-background;
         font-family: $main-font;
         font-size: $font-size-num;
         font-weight: 700;
+        color: $text-blue; 
         display: grid;
         justify-content: center;
         align-items: center;
         justify-items: center;
         border-radius: 5px;
         cursor: pointer;
+        transition: all ease 0.1s;
+        box-shadow: 0px 5px 0px 0px $white-key-shadow;
+
+        &:active{
+            transform: translateY(5px);
+            box-shadow: 0px 0px 0px 0px;
+        }
 
         &--clean{
-            background-color: $white-key-background;
+            border: none;
+            outline: none;
+            background-color: $blue-key-background;
             font-family: $main-font;
             font-size: 20px;
             font-weight: 700;
+            color: $text-white;
             text-transform: uppercase;
             display: grid;
             justify-content: center;
@@ -37,13 +50,27 @@
             justify-items: center;
             border-radius: 5px;
             cursor: pointer;
+            transition: all ease 0.1s;
+            box-shadow: 0px 5px 0px 0px $blue-key-shadow;
+
+            &:hover{
+                background-color: $blue-key-hover;
+            }
+
+            &:active{
+                transform: translateY(5px);
+                box-shadow: 0px 0px 0px 0px;
+            }
         }
 
         &--expand1{
-            background-color: $white-key-background;
+            border: none;
+            outline: none;
+            background-color: $blue-key-background;
             font-family: $main-font;
             font-size: 20px;
             font-weight: 700;
+            color: $text-white;
             text-transform: uppercase;
             grid-column: 1 / 3;
             display: grid;
@@ -52,13 +79,27 @@
             justify-items: center;
             border-radius: 5px;
             cursor: pointer;
+            transition: all ease 0.1s;
+            box-shadow: 0px 5px 0px 0px $blue-key-shadow;
+
+            &:hover{
+                background-color: $blue-key-hover;
+            }
+
+            &:active{
+                transform: translateY(5px);
+                box-shadow: 0px 0px 0px 0px;
+            }
         }
 
         &--expand2{
-            background-color: $white-key-background;
+            border: none;
+            outline: none;
+            background-color: $red-key-background;
             font-family: $main-font;
             font-size: 20px;
             font-weight: 700;
+            color: $text-white;
             text-transform: uppercase;
             grid-column: 3 / 5;
             display: grid;
@@ -67,6 +108,17 @@
             justify-items: center;
             border-radius: 5px;
             cursor: pointer;
+            transition: all ease 0.1s;
+            box-shadow: 0px 5px 0px 0px $red-key-shadow;
+
+            &:hover{
+                background-color: $red-key-hover;
+            }
+
+            &:active{
+                transform: translateY(5px);
+                box-shadow: 0px 0px 0px 0px;
+            }
         }
     }
 }
