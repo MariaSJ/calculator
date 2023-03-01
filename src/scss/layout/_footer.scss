@@ -1,4 +1,6 @@
-.footer { 
+///////////////// THEME 1 //////////////////////
+
+body.dark .footer { 
     height: 5%;
     font-size: 11px; 
     text-align: center;
@@ -9,8 +11,54 @@
     }
 }
 
+// MEDIAQUERIES
+
 @media all and (min-width: 768px){
-    .footer{
+    body.dark .footer{
         font-size: 15px; 
     }
 }
+
+///////////////// THEME 2 //////////////////////
+
+body.light .footer { 
+    height: 5%;
+    font-size: 11px; 
+    text-align: center;
+
+    &__link { 
+        color: $red-key-background;
+        text-decoration: none;
+    }
+}
+
+// MEDIAQUERIES
+
+@media all and (min-width: 768px){
+    body.light .footer{
+        font-size: 15px; 
+    }
+}
+
+///////////////// THEME 3 //////////////////////
+
+body.colorful .footer { 
+    height: 5%;
+    font-size: 11px; 
+    text-align: center;
+    color: $violet-key-hover; 
+
+    &__link { 
+        color: $text-yellow;
+        text-decoration: none;
+    }
+}
+
+// MEDIAQUERIES
+
+@media all and (min-width: 768px){
+    body.colorful .footer{
+        font-size: 15px; 
+    }
+}
+

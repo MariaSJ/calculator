@@ -48,3 +48,36 @@ function clean () {
     var text = result.value;
     result.value = text.slice(0, text.length - 1);
 }
+
+// toggle themes
+
+const btnDark = document.querySelector('.js-btn-dark');
+const btnLight = document.querySelector('.js-btn-light');
+const btnColorful = document.querySelector('.js-btn-colorful');
+const body = document.getElementById('body');
+
+function addBodyClass(className) {
+    const classes = ['dark', 'light', 'colorful'];
+  
+    if (!classes.includes(className)) {
+      return;
+    }
+  
+    classes.forEach((c) => {
+      body.classList.remove(c);
+    });
+  
+    body.classList.add(className);
+  }
+
+btnDark.addEventListener('click', () => {
+    addBodyClass('dark')
+})
+
+btnLight.addEventListener('click', () => {
+    addBodyClass('light')
+})
+
+btnColorful.addEventListener('click', () => {
+    addBodyClass('colorful')
+})

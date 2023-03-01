@@ -1,4 +1,4 @@
-// THEME 1
+///////////////// THEME 1 //////////////////////
 body.dark .header{
     width: 100vw;
     padding-left: 30px;
@@ -186,7 +186,7 @@ body.light .header{
     }
 }
 
-///////////////// MEDIAQUERIES /////////////////////
+// MEDIAQUERIES 
 
 @media all and (min-width: 768px){
     body.light .header{
@@ -289,7 +289,7 @@ body.colorful .header{
     }
 }
 
-///////////////// MEDIAQUERIES /////////////////////
+// MEDIAQUERIES 
 
 @media all and (min-width: 768px){
     body.colorful .header{

@@ -13,14 +13,17 @@ body{
 //// Toggle class
 .dark{
     background-color: $one-main-background;
+    transition: .3s ease all;
 }
 
 .light{
     background-color: $two-main-background;
+    transition: .3s ease all;
 }
 
 .colorful{
     background-color: $three-main-background;
+    transition: .3s ease all;
 }
 
 .main{
@@ -36,7 +39,7 @@ body{
     width: 100vw;
 }
 
-/////////////// MEDIAQUERIES /////////////////////
+// MEDIAQUERIES 
 
 @media all and (min-width: 768px){
     .calc{

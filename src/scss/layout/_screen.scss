@@ -1,5 +1,6 @@
-// THEME 1
-.screen{
+///////////////// THEME 1 //////////////////////
+
+body.dark .screen{
     box-sizing: border-box;
     padding-left: 30px;
     padding-right: 30px;
@@ -30,10 +31,94 @@
     }
 }
 
-/////////////// MEDIAQUERIES /////////////////////
+// MEDIAQUERIES 
 
 @media all and (min-width: 768px){
-    .screen{
+    body.dark .screen{
+        width: 400px;
+        height: 80px;
+    }
+}
+
+///////////////// THEME 2 //////////////////////
+
+body.light .screen{
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: calc(100vw - 60px);
+    margin-left: auto;
+    margin-right: auto;
+    height: 75px;
+    border-radius: 10px;
+    background-color: $two-screen-background;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &__operations{
+        border: 0;
+        outline: none;
+        background-color: $two-screen-background;
+        text-align: right;
+        height: 32px;
+        box-sizing: border-box;
+        width: 100%;
+        font-size: $font-size-num;
+        font-weight: 700;
+        color: $text-gray;
+    }
+}
+
+// MEDIAQUERIES 
+
+@media all and (min-width: 768px){
+    body.light .screen{
+        width: 400px;
+        height: 80px;
+    }
+}
+
+///////////////// THEME 3 //////////////////////
+
+body.colorful .screen{
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: calc(100vw - 60px);
+    margin-left: auto;
+    margin-right: auto;
+    height: 75px;
+    border-radius: 10px;
+    background-color: $three-toggle-background;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &__operations{
+        border: 0;
+        outline: none;
+        background-color: $three-toggle-background;
+        text-align: right;
+        height: 32px;
+        box-sizing: border-box;
+        width: 100%;
+        font-size: $font-size-num;
+        font-weight: 700;
+        color: $text-yellow;
+    }
+}
+
+// MEDIAQUERIES 
+
+@media all and (min-width: 768px){
+    body.colorful .screen{
         width: 400px;
         height: 80px;
     }

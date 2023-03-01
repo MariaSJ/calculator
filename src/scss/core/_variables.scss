@@ -34,8 +34,10 @@ $two-screen-background: hsl(0, 0%, 93%);
 // Keys 
 $cyan-key-background: hsl(185, 42%, 37%);
 $cyan-key-shadow: hsl(185, 58%, 25%);
+$cyan-key-hover: #65BFBF; 
 $orange-key-background: hsl(25, 98%, 40%);
 $orange-key-shadow: hsl(25, 99%, 27%);
+$orange-key-hover: #F27C38;
 $gray-key-background:  hsl(45, 7%, 89%);
 $gray-key-shadow: hsl(35, 11%, 61%);
 // Text
@@ -50,13 +52,14 @@ $three-toggle-background: hsl(268, 71%, 12%);
 // Keys 
 $violet-key-background: hsl(281, 89%, 26%);
 $magenta-key-shadow: hsl(285, 91%, 52%);
+$violet-key-hover: #8631B0;
 $light-cyan-key-background: hsl(176, 100%, 44%);
 $soft-cyan-key-shadow: hsl(177, 92%, 70%);
+$light-cyan-key-hover: #91F2E9; 
 $dark-violet-key-background:  hsl(268, 47%, 21%);
 $dark-magenta-key-shadow: hsl(290, 70%, 36%);
+$dark-violet-key-hover: #6B34AC; 
 // Text
 $text-yellow: hsl(52, 100%, 62%);
 $text-dark-blue: hsl(198, 20%, 13%);
 
-
-// transition: .3s ease all;
