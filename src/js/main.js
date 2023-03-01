@@ -43,3 +43,8 @@ function calculate() {
 function reset() {
     result.value = "";
 }
+
+function clean () {
+    var text = result.value;
+    result.value = text.slice(0, text.length - 1);
+}
