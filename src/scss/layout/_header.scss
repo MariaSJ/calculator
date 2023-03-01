@@ -1,5 +1,8 @@
-.header{
-    width: 310px;
+// THEME 1
+body.dark .header{
+    width: 100vw;
+    padding-left: 30px;
+    padding-right: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -49,75 +52,258 @@
         justify-content: space-between;
     }
 
-    &__checkbox---1{
-        
+    &__btn--1{
+        outline: none;
+        border-style: none;
+        width: 15px; 
+        height: 15px;
+        border-radius: 10px;
+        background-color: $red-key-background;
+        cursor: pointer;
     }
-    &__checkbox---2{
+    &__btn--2{
+        outline: none;
+        border-style: none;
+        width: 15px; 
+        height: 15px;
+        border-radius: 10px;
         background-color: $one-toggle-background;
+        cursor: pointer;
     }
-    &__checkbox---3{
-        
+    &__btn--3{
+        outline: none;
+        border-style: none;
+        width: 15px; 
+        height: 15px;
+        border-radius: 10px;
+        background-color: $one-toggle-background;
+        cursor: pointer;
     }
 }
 
 
+// MEDIAQUERIES 
+
+@media all and (min-width: 768px){
+    body.dark .header{
+        width: 400px;
+        padding: 0;
+
+        &__title{
+            font-size: 30px;
+        }
+        &__text{
+            font-size: 15px;
+        }
+        &__num{
+            font-size: 15px;
+        }
+    }
+}
 
 
-// switch theme
-// .switch {
-//     --secondary-container: #3a4b39;
-//     --primary: #84da89;
-//     font-size: 17px;
-//     position: relative;
-//     display: inline-block;
-//     width: 4em;
-//     height: 1.2em;
-//    }
-   
-//    .switch input {
-//     display: none;
-//     opacity: 0;
-//     width: 0;
-//     height: 0;
-//    }
-   
-//    .slider {
-//     position: absolute;
-//     cursor: pointer;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     background-color: #313033;
-//     transition: .2s;
-//     border-radius: 30px;
-//    }
-   
-//    .slider:before {
-//     position: absolute;
-//     content: "";
-//     height: 0.8em;
-//     width: 0.8em;
-//     border-radius: 20px;
-//     left: 0.2em;
-//     bottom: 0.2em;
-//     background-color: #aeaaae;
-//     transition: .4s;
-//    }
-   
-//    input:checked + .slider::before {
-//     background-color: var(--primary);
-//    }
-   
-//    input:checked + .slider {
-//     background-color: var(--secondary-container);
-//    }
-   
-//    input:focus + .slider {
-//     box-shadow: 0 0 1px var(--secondary-container);
-//    }
-   
-//    input:checked + .slider:before {
-//     transform: translateX(1.3em);
-//    }
+///////////////// THEME 2 //////////////////////
 
+body.light .header{
+    width: 100vw;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &__title{
+        font-size: 25px;
+        text-transform: lowercase;
+        color: $text-gray;
+    }
+
+    &__theme{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__text{
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $text-gray;
+    }
+
+    &__wraper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    &__num{
+        font-size: 12px;
+        font-weight: 700;
+        color: $text-gray;
+    }
+
+    &__switch{
+        width: 64px;
+        background-color: $two-toggle-background;
+        padding: 5px;
+        border-radius: 11px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__btn--1{
+        outline: none;
+        border-style: none;
+        width: 15px; 
+        height: 15px;
+        border-radius: 10px;
+        background-color: $two-toggle-background;
+        cursor: pointer;
+    }
+    &__btn--2{
+        outline: none;
+        border-style: none;
+        width: 15px; 
+        height: 15px;
+        border-radius: 10px;
+        background-color: $orange-key-background;
+        cursor: pointer;
+    }
+    &__btn--3{
+        outline: none;
+        border-style: none;
+        width: 15px; 
+        height: 15px;
+        border-radius: 10px;
+        background-color: $two-toggle-background;
+        cursor: pointer;
+    }
+}
+
+///////////////// MEDIAQUERIES /////////////////////
+
+@media all and (min-width: 768px){
+    body.light .header{
+        width: 400px;
+        padding: 0;
+
+        &__title{
+            font-size: 30px;
+        }
+        &__text{
+            font-size: 15px;
+        }
+        &__num{
+            font-size: 15px;
+        }
+    }
+}
+
+///////////////// THEME 3 //////////////////////
+
+body.colorful .header{
+    width: 100vw;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &__title{
+        font-size: 25px;
+        text-transform: lowercase;
+        color: $text-yellow;
+    }
+
+    &__theme{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__text{
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $text-yellow;
+    }
+
+    &__wraper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    &__num{
+        font-size: 12px;
+        font-weight: 700;
+        color: $text-yellow;
+    }
+
+    &__switch{
+        width: 64px;
+        background-color: $three-toggle-background;
+        padding: 5px;
+        border-radius: 11px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__btn--1{
+        outline: none;
+        border-style: none;
+        width: 15px; 
+        height: 15px;
+        border-radius: 10px;
+        background-color: $three-toggle-background;
+        cursor: pointer;
+    }
+    &__btn--2{
+        outline: none;
+        border-style: none;
+        width: 15px; 
+        height: 15px;
+        border-radius: 10px;
+        background-color: $three-toggle-background;
+        cursor: pointer;
+    }
+    &__btn--3{
+        outline: none;
+        border-style: none;
+        width: 15px; 
+        height: 15px;
+        border-radius: 10px;
+        background-color: $soft-cyan-key-shadow;
+        cursor: pointer;
+    }
+}
+
+///////////////// MEDIAQUERIES /////////////////////
+
+@media all and (min-width: 768px){
+    body.colorful .header{
+        width: 400px;
+        padding: 0;
+
+        &__title{
+            font-size: 30px;
+        }
+        &__text{
+            font-size: 15px;
+        }
+        &__num{
+            font-size: 15px;
+        }
+    }
+}

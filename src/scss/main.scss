@@ -8,7 +8,19 @@
 body{
     height: 100vh;
     font-family: $main-font;
+}
+
+//// Toggle class
+.dark{
     background-color: $one-main-background;
+}
+
+.light{
+    background-color: $two-main-background;
+}
+
+.colorful{
+    background-color: $three-main-background;
 }
 
 .main{
@@ -21,6 +33,14 @@ body{
 }
 
 .calc{
-    width: 310px;
+    width: 100vw;
+}
+
+/////////////// MEDIAQUERIES /////////////////////
+
+@media all and (min-width: 768px){
+    .calc{
+        width: 400px;
+    }
 }
  
